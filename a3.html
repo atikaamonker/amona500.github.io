@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Monoton ">
+
+        <title>Assignment 2</title>
+        <style>
+            body {
+                background-color: #e8c414
+                ;
+                font-family: 'Monoton', serif;
+               font-size: 90px;
+
+            }
+            span{
+                color:black;
+                background-color:white;
+            }
+            .example2{
+                height:300px;
+                margin:20px;
+                padding:20px;
+                background-color:#3d3c3a;
+                float:right;
+            }
+             .clock{
+                height:300px;
+                width:30px;
+                position:relative;
+                background-color:#3d3c3a;
+                animation-name: myclock;
+                animation-duration:5s;
+                animation-timing-function:linear;
+                animation-iteration-count:infinite;
+             }
+             
+             .button{
+                 background-color:#3a547c;
+                 animation-name: mybutton;
+                animation-duration:3s;
+                animation-timing-function:ease-in;
+                animation-iteration-count:infinite;
+                 
+             }
+            
+            .rectangle1{
+                background-color:#3d3c3a;
+                border-radius:10px;
+                width:1000px;
+                height:8px;
+                }
+            .rectangle2{
+                background-color:#3d3c3a;
+                border-radius:20px;
+                width:2000px;
+                height:20px;
+                }
+            .rectangle3{
+                background-color:#3d3c3a;
+                border-radius:40px;
+                width:3000px;
+                height:27px;
+                }
+            
+                @keyframes myclock{
+                    from {
+                        transform:rotate(0deg);
+                    }
+                    to{
+                        transform:rotate(360deg);
+                    }
+                }
+                    
+         @keyframes mybutton{
+                    0% {
+                        background-color:blue;
+                        width:200px;
+                        height:200px;
+                        line-height:200px;
+                        color:red;
+                    }
+                    50%
+                    { background-color:red;
+                        width:300px;
+                        height:300px;
+                        line-height:300px;
+                        color:white;
+                        }
+                    100% {
+                        background-color:blue;
+                        width:200px;
+                        height:200px;
+                        line-height:200px;
+                        color:red;
+                    }
+                }
+        </style>
+    </head>
+    <body>
+        
+        
+        <h1><center><font color=#3d3c3a>urban</font></center></h1>
+     
+   
+   
+       <br><center><div class="clock"></div></center><br>
+   
+  
+   <center><div class="button"></div></center><br>
+   <center><div class="rectangle3"></div></center><br>
+ 
+    
+  
+      <br>
+      <br>
+        <center><img src='urban-01.png'></center>
+        
+        <br>
+        <br>
+         <center><div style="font-family: 'Quicksand',serif; color:#073d37"><a href ='a2page4.html'>JAVA</a></center>
+      
+        
+        
+        
+            
+        
+    </body>
+</html>

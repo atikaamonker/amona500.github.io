@@ -29,19 +29,24 @@
         
             }
                 
-            .pinkcircle{
+            .mgreencircle{
                 background-color:#1f5e46;
                 border-radius:50px;
                 width:100px;
                 height:100px;
+                 animation-name: mylgreencircle;
+                animation-duration:3s;
+                animation-timing-function:ease-out;
+                animation-iteration-count:infinite;
+                 
                 }
-            .yellowcircle{
+            .lgreencircle{
                 background-color:#45843b;
                 border-radius:50px;
                 width:100px;
                 height:100px;
                 }
-            .indigocircle{
+            .dgreencircle{
                 background-color:#073d37;
                 border-radius:50px;
                 width:100px;
@@ -53,9 +58,36 @@
                 width:120px;
                 height:150px;
                 }
-                 body {font-family: 'Quicksand', 
-                font-size:30px;
-              }
+                
+              
+            .copy {
+                background:2copy.png;
+    animation-name: leafanim;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    }
+    
+               @keyframes mylgreencircle{
+                    0% {
+                        background-color:#45843b;
+                        width:200px;
+                        height:200px;}
+                    50%
+                    { background-color:#073d37;}
+                    100% {
+                        background-color:#45843b;}
+               }
+                    
+    @keyframes copy{
+                    from {
+                        transform:rotate(0deg);
+                    }
+                    to{
+                        transform:rotate(360deg);
+                    }
+                }
+
         </style>
         
     </head>
@@ -66,12 +98,12 @@
 
    <center><div class="bluecircle"></div></center>
   
-    <center><img src='2 copy.png'></center>
+    <center><div class="copy"><img src='2 copy.png'></div></center>
    <br>
-   <center><div class="yellowcircle"></div></center>
+   <center><div class="lgreencircle"></div></center>
    <br>
-   <center><div class="pinkcircle"></div></center><br>
-   <center><div class="indigocircle"></div></center>
+   <center><div class="mgreencircle"></div></center><br>
+   <center><div class="dgreencircle"></div></center>
      <br>
       <br>
    
@@ -81,10 +113,10 @@
 
      <br>
       <br>
-      <center><div class="yellowcircle"></div></center>
+      <center><div class="lgreencircle"></div></center>
    <br>
-   <center><div class="pinkcircle"></div></center><br>
-   <center><div class="indigocircle"></div></center>
+   <center><div class="mgreencircle"></div></center><br>
+   <center><div class="dgreencircle"></div></center>
  
      
    
@@ -96,7 +128,7 @@
        <br>
         <br>
         <br>
-      <center><div style="font-family: 'Quicksand',serif; color:#073d37"><a href ='a2page2.html'>STRUCTURE</a></center>
+      <center><div style="font-family: 'Quicksand',serif; color:#073d37"><a href ='a3page2.html'>STRUCTURE</a></center>
       
        
         
