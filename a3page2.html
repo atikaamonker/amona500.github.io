@@ -23,20 +23,75 @@
                 background-color:#ffffff;
                 border-radius:0px;
                 width:10px;
-                height:50px;
+                height:150px;
+                animation-name: myrectangle1;
+                animation-duration:4s;
+                animation-timing-function:linear;
+                animation-iteration-count:infinite;
                 }
             .rectangle2{
                 background-color:#ffffff;
                 border-radius:0px;
                 width:10px;
                 height:300px;
+                animation-name: myrectangle2;
+                animation-duration:4s;
+                animation-timing-function:linear;
+                animation-iteration-count:infinite;
                 }
             .rectangle3{
                 background-color:#ffffff;
                 border-radius:0px;
                 width:10px;
                 height:600px;
+                animation-name: myrectangle2;
+                animation-duration:4s;
+                animation-timing-function:linear;
+                animation-iteration-count:infinite;
                 }
+                .button{
+                 animation-name: mybutton;
+                animation-duration:6s;
+                animation-timing-function:linear;
+                animation-iteration-count:infinite;
+                 }
+                
+                 @keyframes myrectangle1{
+                   from {
+                        transform:rotate(0deg);
+                    }
+                   
+                    to{
+                        transform:rotate(360deg);
+                    }
+                }
+                
+                @keyframes myrectangle2{
+                    from {
+                        transform:rotate(0deg);
+                    }
+                    to{
+                        transform:rotate(360deg);
+                    }
+                }
+                @keyframes myrectangle3{
+                    from {
+                        transform:rotate(0deg);
+                    }
+                    to{
+                        transform:rotate(360deg);
+                    }
+                }
+                 @keyframes mybutton{
+                    from {
+                        transform:rotate(0deg);
+                    }
+                    to{
+                        transform:rotate(1800deg);
+                    }
+    
+                    }
+                
         </style>
     </head>
     <body>
@@ -55,7 +110,7 @@
   
       <br>
       <br>
-        <center><img src='structure-01.png'></center>
+        <center><div class="button"><img src='structure-01.png'></div></center>
         <br>
         
             <center><div style="font-family: 'Quicksand',serif; color:#073d37"><a href ='a2page3.html'>URBAN</a></center>
