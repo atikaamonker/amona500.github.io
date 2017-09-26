@@ -1,13 +1,14 @@
 <html>
     <head>
         <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Megrim ">
+          href="https://fonts.googleapis.com/css?family=Monoton ">
 
         <title>Assignment 2</title>
         <style>
             body {
-                background-color: #420428;
-                font-family: 'Megrim', serif;
+                background-color: #e8c414
+                ;
+                font-family: 'Monoton', serif;
                font-size: 90px;
 
             }
@@ -20,46 +21,153 @@
                 font-size:30px;
             }
             .rectangle1{
-                background-color:#ffffff;
-                border-radius:0px;
-                width:10px;
-                height:50px;
+                background-color:#3d3c3a;
+                border-radius:10px;
+                width:1000px;
+                height:8px;
+                animation-name: rectangle1anim;
+                animation-duration: 2s;
+                animation-timing-function: ease-out;
+                animation-iteration-count: infinite;
+                position: absolute;
                 }
             .rectangle2{
-                background-color:#ffffff;
-                border-radius:0px;
-                width:10px;
-                height:300px;
+                background-color:#3d3c3a;
+                border-radius:20px;
+                width:2000px;
+                height:20px;
                 }
             .rectangle3{
-                background-color:#ffffff;
-                border-radius:0px;
-                width:10px;
-                height:600px;
+                background-color:#3d3c3a;
+                border-radius:40px;
+                width:3000px;
+                height:27px;
+                animation-name: rectangle2anim;
+                animation-duration: 2s;
+                animation-timing-function: ease-out;
+                animation-iteration-count: infinite;
+                position: absolute;
                 }
+            .square1{
+                background-color:#3d3c3a;
+                border-radius:0px;
+                width:40px;
+                height:40px;
+                }
+                .square2{
+                background-color:#3d3c3a;
+                border-radius:0px;
+                width:40px;
+                height:40px;
+                animation-name: square2anim;
+                animation-duration: 2s;
+                animation-timing-function: ease-out;
+                animation-iteration-count: infinite;
+            
+                }    
+            .wrapper {
+               position: relative;
+                }
+            .building {
+    
+               animation-name: buildinganim;
+                animation-duration: 2s;
+                animation-timing-function: ease-out;
+                animation-iteration-count: infinite;
+                position: absolute;
+                
+            }
+              @keyframes rectangle1anim {
+    from {
+       margin-left:100%;
+    width:300%
+    }
+    to {
+         margin-left:0%;
+    width:100%
+    }
+}
+
+ @keyframes rectangle2anim {
+    from {
+       margin-left:100%;
+    width:300%
+    }
+    to {
+         margin-left:0%;
+    width:100%
+    }
+}
+
+ @keyframes buildinganim {
+    from {
+       margin-left:100%;
+    width:300%
+    }
+    to {
+         margin-left:0%;
+    width:100%
+    }
+}
+
+ @keyframes square2anim {
+   0% {
+        width:40px;
+        height:40px;}
+    
+ 
+  50% {
+        width:200px;
+        height:200px;}
+               
+ 
+  100% {
+        width:40px;
+        height:40px;}
+               
+        }                
+                    
+
+
         </style>
     </head>
     <body>
-        <h1><center><font color=#ffffff><u>STRUCTURE</u></font></center></h1>
-     <br>
-      <br>
-      
-   <br>
+        <h1><center><font color=#3d3c3a>urban</font></center></h1>
+     
+   <center><div class="square1"></div></center>
+       <br>
+       <center><div class="square2"></div></center>
+       <br>
+       <center><div class="square1"></div></center>
+       <br>
+       <center><div class="rectangle1"></div></center>
+       <br>
        <center><div class="rectangle1"></div></center>
    <br>
    <center><div class="rectangle2"></div></center>
-       <br>
-   <center><div class="rectangle3"></div></center>
+       <br><center><div class="rectangle2"></div></center><br>
+   
+  
+   <center><div class="rectangle3"></div></center><br>
+   <center><div class="rectangle3"></div></center><br>
  
     
   
       <br>
       <br>
-        <center><img src='structure-01.png'></center>
-        <br>
+        <center><div class="building"><img src='urban-01.png'></div></center>
         
-            <center><div style="font-family: 'Quicksand',serif; color:#073d37"><a href ='a2page3.html'>URBAN</a></center>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+         <center><div style="font-family: 'Quicksand',serif; color:#073d37"><a href ='a2page4.html'>JAVA</a></center>
       
+        
+        
         
             
         
