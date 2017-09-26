@@ -15,34 +15,73 @@
                 color:black;
                 background-color:white;
             }
-            .pizza{
-                font-family:Times;
-                font-size:30px;
-            }
+           
             .circle1{
                 background-color:#ba718e;
                 border-radius:400px;
                 width:400px;
                 height:400px;
+                animation-name: circleanim;
+                animation-duration: 5s;
+                animation-timing-function: ease-out;
+                animation-iteration-count: infinite;
                 }
-            .rectangle2{
-                background-color:#3d3c3a;
-                border-radius:0px;
-                width:2000px;
-                height:20px;
+                 .bloom {
+    
+               animation-name: bloomanim;
+                animation-duration: 4s;
+                animation-timing-function: ease-out;
+                animation-iteration-count: infinite;
+                
                 }
-            .rectangle3{
-                background-color:#3d3c3a;
-                border-radius:40px;
-                width:3000px;
-                height:27px;
-                }
-            .square1{
-                background-color:#f2dfc6;
-                border-radius:0px;
-                width:150px;
-                height:150px;
-                }
+                
+                 @keyframes bloomanim{
+                 0% {
+                        
+                        width:200px;
+                        height:200px;
+                        line-height:200px;
+                       
+                    }
+                    50%
+                    { 
+                        width:600px;
+                        height:600px;
+                        line-height:600px;
+                       
+                        }
+                    100% {
+                       
+                        width:200px;
+                        height:200px;
+                        line-height:200px;
+                        }
+    }
+        @keyframes circleanim{
+                 0% {
+                        background-color:#ffc6e3;
+                        width:200px;
+                        height:200px;
+                        line-height:200px;
+                        color:#ba718e;
+                    }
+                    50%
+                    { 
+                        background-color:#ba718e;
+                        width:600px;
+                        height:600px;
+                        line-height:600px;
+                        color:#ba718e;
+                        }
+                    100% {
+                       background-color:#ffc6e3;
+                        width:200px;
+                        height:200px;
+                        line-height:200px;
+                         color:#ba718e;
+                        }
+    }
+               
         </style>
     </head>
     <body>
@@ -50,10 +89,15 @@
         <br>
         <br>
     
-       <center><img src='8-01.png'></center>
+       <center><div class="bloom"><img src='8-01.png'></div></center>
+    
+    
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
         
- 
-       <br>
        <center><div class="circle1"></div></center>
        <br>
        <center><div class="circle1"></div></center>
