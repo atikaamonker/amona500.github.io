@@ -27,12 +27,15 @@
                 animation-iteration-count: infinite;
                 }
                  .bloom {
-    
-               animation-name: bloomanim;
+                animation-name: bloomanim;
                 animation-duration: 4s;
                 animation-timing-function: ease-out;
                 animation-iteration-count: infinite;
                 
+                }
+                .bloom img {
+                    max-height: 100%;
+                    max-width: 100%;
                 }
                 
                  @keyframes bloomanim{
@@ -107,7 +110,7 @@
   
       <br>
       <br>
-        <center><img src='flower1.png'></center>
+        <center><div class="bloom"><img src='flower1.png'></div></center>
         
         <br>
         <center><div style="font-family: 'Quicksand',serif; color:#073d37"><a href ='a3page6.html'>HEXAHEDRON</a></center>
