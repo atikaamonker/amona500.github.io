@@ -1,0 +1,184 @@
+<html>
+    <head>
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Oleo Script Swash Caps ">
+          <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Quicksand ">
+
+        <title>assignment 2</title>
+        <style>
+            body {
+                background-color: #ffffff;
+                font-family: 'Oleo Script Swash Caps', serif;
+               font-size: 90px;
+
+            }
+            span{
+                color:black;
+                background-color:white;
+            }
+            
+            .bluecircle{
+                background-color:#24443a;
+                border-radius:50px;
+                width:100px;
+                height:100px;
+                opacity:1;
+                
+            }
+            
+                .bluecircle:hover
+                {
+                        border-radius:20%;
+                }
+                
+                .bluecircle:active
+                {
+                        opacity:0;
+                }
+                
+                .leaf{
+                opacity:1;
+                
+            }
+            .leaf:hover
+        
+                {
+                        opacity:0.5;
+                }
+            
+                
+            
+                
+            .mgreencircle{
+                background-color:#1f5e46;
+                border-radius:50px;
+                width:100px;
+                height:100px;
+                 animation-name: mylgreencircle;
+                animation-duration:3s;
+                animation-timing-function:ease-out;
+                animation-iteration-count:infinite;
+                opacity:1;
+                 
+                }
+            .lgreencircle{
+                background-color:#b1ddaa;
+                border-radius:50px;
+                width:100px;
+                height:100px;
+                }
+                .lgreencircle:hover {
+             background-color: #45843b;
+               }
+              .lgreencircle:active {
+             background-color: #12260e;
+               }
+                  
+            .dgreencircle{
+                background-color:#073d37;
+                border-radius:50px;
+                width:100px;
+                height:100px;
+                }
+                
+                .copy {
+                  animation-name: leafanim;
+                  animation-duration:5s;
+                  animation-timing-function:ease-out;
+                  animation-iteration-count:infinite;
+                }
+                
+                .bouncing {
+                  animation-duration: 5s;
+                  animation-name: bounceIn;
+                  animation: bounceIn 5s;
+                  animation-iteration-count:infinite;
+                  }
+        
+                
+      
+    
+               @keyframes mylgreencircle{
+                    0% {
+                        background-color:#45843b;
+                        width:200px;
+                        height:200px;}
+                    50%
+                    { background-color:#073d37;}
+                    100% {
+                        background-color:#45843b;}
+               }
+                    
+    @keyframes leafanim{
+                    from {
+                        transform:rotate(0deg);
+                        opacity:0;
+                    }
+                    to{
+                        transform:rotate(360deg);
+                        opacity:1;
+                    }
+                }
+                @keyframes bounceIn {
+                      0% {
+                        transform: scale(0.1);
+                        opacity: 0;
+                      }
+                      50% {
+                        transform: scale(1.2);
+                        opacity: 1;
+                      }
+                      100% {
+                        transform: scale(1);
+                      }
+                    }
+
+        </style>
+        
+    </head>
+    <body>
+        <center><div class="leaf"><img src='tropical.png'></div></center>
+        <br>
+        <br>
+
+   <center><div class="bluecircle"></div></center>
+   <br>
+  
+    <center><div class="copy"><img src='2 copy.png'></div></center>
+   <br>
+   <center><div class="lgreencircle"></div></center>
+   <br>
+   <center><div class="mgreencircle"></div></center><br>
+   <center><div class="dgreencircle"></div></center>
+     <br>
+      <br>
+   
+        <h1><center><font color=#193149><div class="bouncing">Tropical</u></div></font></center></h1>
+
+
+
+     <br>
+      <br>
+      <center><div class="lgreencircle"></div></center>
+   <br>
+   <center><div class="mgreencircle"></div></center><br>
+   <center><div class="dgreencircle"></div></center>
+   <br>
+ 
+     
+   
+    <center><div class="copy"><img src='2 copy.png'></div></center>
+   <br>
+      <center><div class="bluecircle"> </div> </center>
+      <br>
+       <center><div class="leaf"><img src='tropical.png'></div></center>
+       <br>
+        <br>
+        <br>
+      <center><div style="font-family: 'Quicksand',serif; color:#073d37"><a href ='a3page2.html'>STRUCTURE</a></div></center>
+      
+       
+
+    </body>
+</html>
