@@ -1,9 +1,251 @@
-.bluecircle:active
+
+<html>
+    <head>
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Monoton ">
+
+        <title>Assignment 2</title>
+        <style>
+            body {
+                background-color: #e8c414
+                ;
+                font-family: 'Monoton', serif;
+               font-size: 90px;
+
+            }
+            span{
+                color:black;
+                background-color:white;
+            }
+            .pizza{
+                font-family:Times;
+                font-size:30px;
+            }
+            .rectangle1{
+                background-color:#3d3c3a;
+                border-radius:10px;
+                width:1000px;
+                height:8px;
+                animation-name: rectangle1anim;
+                animation-duration: 2s;
+                animation-timing-function: ease-out;
+                animation-iteration-count: infinite;
+                position: absolute;
+                }
+            .rectangle2{
+                background-color:#3d3c3a;
+                border-radius:20px;
+                width:2000px;
+                height:20px;
+                }
+                
+            .rectangle3{
+                background-color:#3d3c3a;
+                border-radius:40px;
+                width:3000px;
+                height:27px;
+                animation-name: rectangle2anim;
+                animation-duration: 2s;
+                animation-timing-function: ease-out;
+                animation-iteration-count: infinite;
+                position: absolute;
+                }
+            .square1{
+                background-color:#3d3c3a;
+                border-radius:0px;
+                width:40px;
+                height:40px;
+                }
+                .square1:active
                 {
                         box-shadow:
-                                1px 1px #53a7ea,
-                                2px 2px #53a7ea,
-                                10px 10px #53a7ea;
+                                1px 1px #646668,
+                                2px 2px #646668,
+                                10px 10px #646668;
                         -webkit-transform: translateX(-10px);
                         transform: translateX(-10px);
                 }
+                .square2{
+                background-color:#3d3c3a;
+                border-radius:0px;
+                width:50px;
+                height:50px;
+                animation-name: square2anim;
+                animation-duration: 2s;
+                animation-timing-function: ease-out;
+                animation-iteration-count: infinite;
+            
+                } 
+                .square2:active
+                {
+                        box-shadow:
+                                1px 1px #646668,
+                                2px 2px #646668,
+                                10px 10px #646668;
+                        -webkit-transform: translateX(-10px);
+                        transform: translateX(-10px);
+                }
+            .wrapper {
+               position: absolute;
+                }
+                .square-wrapper {
+        background-color: #eee;
+        position: relative;
+        width: 300px;
+        height: 300px;
+    }
+    .square:hover {
+    	z-index:1;
+    }
+    .square {
+        position:relative;
+        width:200px;
+        height:200px;
+    }
+    .one {
+        top: 150px;
+        left: 10px;
+        
+    }
+    .two {
+        top: 200px;
+        left: 20px;
+    }
+    .three {
+        top: 250px;
+        left: 35px;
+    
+    }
+    .four {
+        top: 300px;
+        left: 40px;
+     
+    }
+    
+    .building {
+    
+               animation-name: buildinganim;
+                animation-duration: 2s;
+                animation-timing-function: ease-out;
+                animation-iteration-count: infinite;
+                position: absolute;
+                opacity:0;
+                
+            }
+  
+   
+            
+            
+            
+            
+            
+              @keyframes rectangle1anim {
+    from {
+       margin-left:100%;
+    width:300%
+    }
+    to {
+         margin-left:0%;
+    width:100%
+    }
+}
+
+ @keyframes rectangle2anim {
+    from {
+       margin-left:100%;
+    width:300%
+    }
+    to {
+         margin-left:0%;
+    width:100%
+    }
+}
+
+ 
+ @keyframes square2anim {
+   0% {
+        width:40px;
+        height:40px;}
+    
+ 
+  50% {
+        width:200px;
+        height:200px;}
+               
+ 
+  100% {
+        width:40px;
+        height:40px;}
+               
+        }
+        
+         @keyframes buildinganim {
+    from {
+       margin-left:100%;
+    width:300%
+    opacity:0;
+    }
+    to {
+         margin-left:0%;
+    width:100%;
+    opacity:1;
+    }
+}
+                    
+
+
+        </style>
+    </head>
+    <body>
+        <h1><center><font color=#3d3c3a>urban</font></center></h1>
+     
+   <center><div class="square1"></div></center>
+       <br>
+       <center><div class="square2"></div></center>
+       <br>
+       <center><div class="square1"></div></center>
+       <br>
+       <center><div class="rectangle1"></div></center>
+       <br>
+       <center><div class="rectangle1"></div></center>
+   <br>
+   <center><div class="rectangle2"></div></center>
+       <br><center><div class="rectangle2"></div></center><br>
+   
+  
+   <center><div class="rectangle3"></div></center><br>
+   <center><div class="rectangle3"></div></center><br>
+ 
+    
+  
+      <br>
+      <br>
+        
+        <div class=" square one"><img src='urban-01.png'></div>
+        <div class=" square two"><img src='urban-01.png'></div>
+        <div class=" square three"><img src='urban-01.png'></div>
+        <div class=" square four"><img src='urban-01.png'></div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        
+        <center><div class="building"><img src='urban-01.png'></div></center><br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+         <center><div style="font-family: 'Quicksand',serif; color:#073d37"><a href ='a3page4.html'>JAVA</a></center>
+      
+        
+        
+        
+            
+        
+    </body>
+</html>
