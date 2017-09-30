@@ -44,17 +44,32 @@
                 border-radius:0px;
                 width:10px;
                 height:600px;
-                animation-name: myrectangle2;
-                animation-duration:4s;
-                animation-timing-function:linear;
-                animation-iteration-count:infinite;
-                }
+                opacity:1;
+                animation-name: myrectangle3;
+                animation-duration: 2s;
+                animation-timing-function: ease-out;
+                animation-iteration-count: infinite;
+                animation-delay: 3s;
+                
+            }
                 .button{
                  animation-name: mybutton;
                 animation-duration:6s;
-                animation-timing-function:linear;
+                animation-timing-function:ease;
                 animation-iteration-count:infinite;
                  }
+                 .element {
+  animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #001F3F;
+  }
+  100% {
+    background-color: #420428;
+  }
+}
                 
                  @keyframes myrectangle1{
                    from {
@@ -75,26 +90,41 @@
                     }
                 }
                 @keyframes myrectangle3{
+                    0% {
+                        width:10px;
+                        height:600px;
+                        opacity:1;
+                    }
+                    
+                 
+                  50% {
+                        width:20px;
+                        height:200px;
+                      opacity:0;
+                  }
+                               
+                 
+                  100% {
+                        width:10px;
+                        height:600px;
+                      opacity:1;
+                  }
+                                }
+                 @keyframes mybutton{
                     from {
                         transform:rotate(0deg);
                     }
                     to{
                         transform:rotate(360deg);
                     }
-                }
-                 @keyframes mybutton{
-                    from {
-                        transform:rotate(0deg);
-                    }
-                    to{
-                        transform:rotate(1800deg);
-                    }
     
                     }
                 
         </style>
     </head>
+    <div class = "element">
     <body>
+        
         <h1><center><font color=#ffffff><u>STRUCTURE</u></font></center></h1>
      <br>
       <br>
@@ -105,6 +135,7 @@
    <center><div class="rectangle2"></div></center>
        <br>
    <center><div class="rectangle3"></div></center>
+   
  
     
   
@@ -119,6 +150,6 @@
       
         
             
-        
+    </div>    
     </body>
 </html>
