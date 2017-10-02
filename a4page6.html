@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Orbitron">
+
+        <title>Assignment 2</title>
+        <style>
+            body {
+                background-color:#000000;
+                font-family: 'Orbitron', serif;
+               font-size: 60px;
+
+            }
+            span{
+                color:black;
+                background-color:white;}
+           
+            .circle1{
+                background-color:#ba718e;
+                border-radius:400px;
+                width:400px;
+                height:400px;
+                }
+            .rectangle2{
+                background-color:#3d3c3a;
+                border-radius:0px;
+                width:2000px;
+                height:20px;
+                }
+            .rectangle3{
+                background-color:#3d3c3a;
+                border-radius:40px;
+                width:3000px;
+                height:27px;
+                }
+            .square1{
+                background-color:#f2dfc6;
+                border-radius:0px;
+                width:150px;
+                height:150px;
+                }
+                 .cube {
+    
+               animation-name: cubeanim;
+                animation-duration:4s;
+                animation-timing-function:linear;
+                animation-iteration-count:infinite;
+                opacity:1;
+                }
+                
+                .fixcube {
+        position: fixed;
+        top: 150px;
+        right: 30px;
+        float:right;
+        opacity:0.5;
+    }
+           
+          .shrink:hover
+{
+        -webkit-transform: scale(0.1);
+        -ms-transform: scale(0.1);
+        transform: scale(0.1);
+}
+.shrink:active
+{
+        -webkit-transform: scale(0.3);
+        -ms-transform: scale(0.3);
+        transform: scale(0.3);
+}
+
+
+                 @keyframes cubeanim{
+                    from {
+                        transform:rotate(0deg); 
+                        opacity:0;
+                    }
+                    to{
+                        transform:rotate(180deg);
+                        opacity:1;
+                    }
+    
+}
+        </style>
+    </head>
+    <body>
+        
+        <div class="fixcube"><img src='smallcube-01.png'></div>
+        <br>
+        <br>
+        <br>
+        <center><div class="cube"><img src='cubes-01.png'></div></center>
+        <br>
+        <br>
+         
+         <h1><center><font color=#fff>HEXAHEDRON</font></center></h1>
+        
+       <br>
+       <center><div class="shrink"><img src='cubes-01.png'></div></center>
+       <br>
+   
+
+    
+        
+        <br>
+        <center><div style="font-family: 'Quicksand',serif; color:#073d37"><a href ='a3page7.html'>Tucan</a></div></center>
+      
+        
+        
+        
+            
+        
+    </body>
+</html>

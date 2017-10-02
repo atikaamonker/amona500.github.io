@@ -44,13 +44,26 @@
                 width:150px;
                 height:150px;
                 }
-                 .tucan{
-                animation-name:tucananim;
-                animation-duration: 2s;
-                animation-timing-function: ease-in;
-                animation-iteration-count: infinite;
-              
-                }
+                 .tucan {
+   animation-name: tucan;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+    opacity:1;
+}
+.tucanleft{
+    float:left;
+}
+.tucanright{
+    float:right;
+}
+
+@keyframes tucan {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
                  @keyframes tucananim{
                  0% {
                         width:200px;
@@ -101,7 +114,8 @@
         </style>
     </head>
     <body>
-        <center><div class="tucan"><img src='9.png'></div></center>
+        <center><div class="tucan tucanleft"><img src='Tucans.png'></div></center>
+        <div class="tucan tucanright"><img src='Tucans.png'></div>
         <br>
         <br>
         <br>
@@ -124,7 +138,8 @@
          <h1><center><u><font color=#f9c32c>Tucan</font></u></center></h1>
         
        <br>
-       <center><div class="tucan"><img src='9.png'></div></center>
+       <center><div class="tucan tucanleft"><img src='Tucans.png'></div></center>
+       <div class="tucan tucanright"><img src='Tucans.png'></div>
        <br>
        <br>
         <br>
