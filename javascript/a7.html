@@ -1,0 +1,122 @@
+<html>
+<head>
+ <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Open Sans">
+
+  <title>I want Junk Food</title>
+  <style>
+  body {
+          background-color: #ffe66b;
+           font-family: 'Open Sans', serif;
+               font-size: 90px;
+             }
+  
+ .circle1 {
+    height:290px;
+    border-radius: 400px;
+     margin: 100px;
+     top:2px;
+     left:2px;
+   }
+   
+    .circle2 {
+    height:290px;
+    border-radius: 400px;
+     top:2px;
+     left:2px;
+   }
+   
+    .square1 {
+    width: 600px;
+    height: 600px;
+    margin: 5px;
+    float: left;
+     margin-bottom: 40px;
+     background-color:#ffff;
+   }
+   
+    .rounded {
+    border-radius: 4000px;
+  }
+   
+  
+   .salad{
+       
+  }
+  #veggie{
+   
+  }
+  
+   
+ 
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+   
+     <h1><center><font color=#fff><div class="salad">I WANT JUNK FOOD</u></div></font></center></h1>
+     
+      <center><div class="circle1"><img src='burger.png'></div></center>
+      <br><br><br>
+      
+     
+      <center><div class="circle2"><img id="veggie" src='healthy1.png'></div></center>
+      <br><br><br><br>
+      <center><div class="circle1"><img src='chips.png'></div></center>
+      <br>
+      
+       <center><div class="circle2"><img src='healthy2.png'></div></center>
+       <br><br><br><br>
+      <center><div class="circle1"><img src='donuts.png'></div></center>
+      <br><br><br><br><br>
+      
+      
+
+<center><div class="square1"></div></center>
+      
+    
+    
+      
+       <script>
+       
+       
+  /* global $ */
+  
+  var veggie=$("#veggie");
+  $( ".circle1" ).click(function() {
+    $( this ).hide();
+  });
+  
+  $( ".circle2" ).click(function() {
+    $( this ).show();
+  });
+   
+  
+  $( ".salad" ).click(function() {
+    $( this ).html( "I WANT SALAD" );
+  });
+  
+   $( ".square1" ).mouseover(function() {
+    $( this ).toggleClass( "rounded" );
+  });
+  
+   $( ".square1" ).mouseover(function() {
+    $( this ).css( "width", getRandomWidth());
+  });
+  
+  veggie.mouseover(function() {
+    $( this ).css( "width", getRandomWidth());
+  });
+  
+  function getRandomWidth(){
+    return Math.floor(Math.random()*600)
+  }
+  
+  
+   
+  
+  
+  
+  </script>
+  </body>
+  </html>

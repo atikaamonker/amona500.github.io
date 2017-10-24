@@ -1,15 +1,39 @@
 <html>
 <head>
-  <title>changing style demo</title>
+  <title>Fruit</title>
   <style>
-  div {
-    width: 60px;
-    height: 60px;
-    margin: 5px;
-    float: left;
+  body {
+          background-color: #a1e9fc
+                ;
+                font-family: 'Monoton', serif;
+               }
+ 
+   .fruits1{
+     float:left;
+     width:40%;
+     height:20%;
+      margin: 100px;
+      float:left;
+    
+    
   }
+  .fruits2{
+    float: right;
+    width:0%;
+    height:20%;
+    margin-bottom: 40px;
+     margin: 100px;
+   }
+.circle1 {
+   width:290px;
+    height:290px;
+    border-radius: 400px;
+     margin: 100px;
+     top:2px;
+     left:2px;
+     position:absolute;
+   }
   .example1, .example2, .example3 {
-     width: 100%; 
      margin-bottom: 40px;
   }
   .rounded {
@@ -19,22 +43,37 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
+  <div class ="fruits1"><img src='apple.png'></div>
+  <div class="circle1" style="background-color:#c41f1f;"></div>
+  <div class ="fruits2"><img src='kiwi.png'></div>
+  <br>
+  <br>
+  <br>
+  <div class ="fruits1"><img src='orange.png'></div>
+  <div class ="fruits2"><img src='dragonfruit.png'></div>
+  <br>
+  <br>
+  <br>
+  <div class ="fruits1"><img src='pomegranate.png'></div>
+   <div class ="fruits2"><img src='pumpkin.png'></div>
+  <br>
+  <br>
+  <br>
  
-  <h3>Example 1</h3>
-  <div class="example1">
+ 
+  
+   <div  class="circle">
     <span id="result">&nbsp;</span>
-    <div style="background-color:blue;"></div>
+    
     <div style="background-color:rgb(15,99,30);"></div>
     <div style="background-color:#123456;"></div>
     <div style="background-color:#f11;"></div>
   </div>
 
-  <h3>Example 2</h3>
   <div class="example2">
     <div style="background-color:purple;"></div>
   </div>
    
-  <h3>Example 3</h3> 
   <div class="example3">
     <div style="background-color:orange;"></div>
   </div>
@@ -42,11 +81,9 @@
   <script>
   /* global $ */
   
-  // Example one: get color of box on mouse click
-  $( ".example1 div" ).click(function() {
-    var color = $( this ).css( "background-color" );
-    $( "#result" ).html( "That div is <span style='color:" +
-      color + ";'>" + color + "</span>." );
+  // Example three: prepend on click
+  $( ".circle1" ).click(function() {
+    $( this ).prepend( "<img src='apple.png'>" );
   });
   
   // Example two: set color of box to random on mouseover
@@ -57,6 +94,7 @@
   function getRandomColor () {
     // this function returns a string with format "rgb(000,000,000)" where 000 is an integer between 0 and 255
     var random0to255 = function() {
+      // this inner function returns an integer between 0 and 255
       return Math.floor(Math.random()*255);
     }
     return "rgb(" + random0to255() + "," + random0to255() + "," + random0to255() + ")";
@@ -67,6 +105,6 @@
     $( this ).toggleClass( "rounded" );
   });
   </script>
-   
+  
 </body>
 </html>
