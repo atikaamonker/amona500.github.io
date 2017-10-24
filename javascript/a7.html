@@ -30,7 +30,6 @@
     width: 600px;
     height: 600px;
     margin: 5px;
-    float: left;
      margin-bottom: 40px;
      background-color:#ffff;
    }
@@ -47,6 +46,21 @@
    
   }
   
+  .dot {
+			    width: 50px;
+			    height: 100px;
+			    background-color: orange;
+			    display: inline-block;
+			    margin: 20px;
+			}
+			.whatever {
+			    background-color: lime;
+			    width: 70px;
+			    height: 70px;
+			    border: 5px solid green;
+			    border-radius: 100%;
+			}
+  
    
  
   </style>
@@ -56,19 +70,21 @@
    
      <h1><center><font color=#fff><div class="salad">I WANT JUNK FOOD</u></div></font></center></h1>
      
-      <center><div class="circle1"><img src='burger.png'></div></center>
+      <center><div class="circle1"><img src='../burger.png'></div></center>
       <br><br><br>
       
      
-      <center><div class="circle2"><img id="veggie" src='healthy1.png'></div></center>
+      <center><div class="circle2"><img id="veggie" src='../healthy1.png'></div></center>
       <br><br><br><br>
-      <center><div class="circle1"><img src='chips.png'></div></center>
+      <center><div class="circle1"><img src='../chips.png'></div></center>
       <br>
       
-       <center><div class="circle2"><img src='healthy2.png'></div></center>
+       <center><div class="circle2"> <img src="../healthy2.png"></div></center>
        <br><br><br><br>
-      <center><div class="circle1"><img src='donuts.png'></div></center>
+      <center><div class="circle1"><img src='../donuts.png'></div></center>
       <br><br><br><br><br>
+      <center><font color=#fff><div class="salad">your body will change as such:</u></div></font>
+      <br>
       
       
 
@@ -81,6 +97,41 @@
        
        
   /* global $ */
+  
+  var weight = Number(prompt("What is your weight in pounds? No judgement ", ""));
+  if (!isNaN(weight))
+  
+  alert("Your weight in kg is " +
+        weight * 0.453592 + " in kgs");
+else
+  alert("Hey! Lying will only make you fatter.");
+  
+  var num = Number(prompt("What is your desired weight?", "0"));
+if (num < 10)
+  alert("You are targetting size - Small");
+else if (num < 100)
+  alert("You are targetting size - Medium");
+else
+  alert("You are targetting size - Large");
+  
+  var cold = true; 
+var windy = false;
+if( cold && windy ) {
+              alert("wear a coat!");
+}
+
+var fat = true; (confirm("You are fat."));
+  var happy = true;(confirm("You are happy."));
+  if (fat && happy){
+   alert ("It's great that you're fat and happy! But wanna be fit and happy?");
+  }
+  else if (!happy){
+      alert("Be Fat and Happy!")
+  }
+  else{
+  alert ("Its great that you're happy!");}
+  
+ 
   
   var veggie=$("#veggie");
   $( ".circle1" ).click(function() {
@@ -107,9 +158,8 @@
   veggie.mouseover(function() {
     $( this ).css( "width", getRandomWidth());
   });
-  
   function getRandomWidth(){
-    return Math.floor(Math.random()*600)
+    return Math.floor(Math.random()*60)
   }
   
   
