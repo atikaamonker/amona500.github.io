@@ -27,12 +27,22 @@
    }
    
     .square1 {
-    width: 600px;
-    height: 600px;
+    width: 300px;
+    height: 300px;
     margin: 5px;
      margin-bottom: 40px;
      background-color:#ffff;
    }
+   
+   .square2 {
+		         width: 20px;
+		        height: 20px;
+		        margin: 2px;
+		        display: inline-block;
+		        background-color: white;
+			    
+			}
+			
    
     .rounded {
     border-radius: 4000px;
@@ -53,13 +63,7 @@
 			    display: inline-block;
 			    margin: 20px;
 			}
-			.whatever {
-			    background-color: lime;
-			    width: 70px;
-			    height: 70px;
-			    border: 5px solid green;
-			    border-radius: 100%;
-			}
+			
 			
 			.dot {
 			    width: 50px;
@@ -75,13 +79,17 @@
 			    border: 5px solid green;
 			    border-radius: 100%;
 			}
-  
+			
+			
+			
    
  
   </style>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
+      
+      
    
      <h1><center><font color=#fff><div class="salad">I WANT JUNK FOOD</u></div></font></center></h1>
      
@@ -98,51 +106,84 @@
        <br><br><br><br>
       <center><div class="circle1"><img src='../donuts.png'></div></center>
       <br><br><br><br><br>
-      <center><font color=#fff><div class="salad">your body will change as such:</u></div></font>
+      
+      
+      
+      
+      <center><font color=#fff><div class="salad">your body will change as such:</div></font>
       <br>
+      <center><div class="square1"></div></center>
       
-      
-
-<center><div class="square1"></div></center>
-      
-    
-    
-      
+      <center><font color=#fff><div id="bodychange"><h3>There are different body types</h3></div></font></center>
+      <br><br>
+      <center><font color=#fff><div id="example5"></div></font></center>
        <script>
        
        
   /* global $ */
   
-  var weight = Number(prompt("What is your weight in pounds? No judgement ", ""));
-  if (!isNaN(weight))
+//   var weight = Number(prompt("What is your weight in pounds? No judgement ", ""));
+//   if (!isNaN(weight))
   
-  alert("Your weight in kg is " +
-        weight * 0.453592 + " in kgs");
-else
-  alert("Hey! Lying will only make you fatter.");
+//   alert("Your weight in kg is " +
+//         weight * 0.453592 + " in kgs");
+// else
+//   alert("Hey! Lying will only make you fatter.");
   
-  var num = Number(prompt("What is your desired weight?", "0"));
-if (num < 10)
-  alert("You are targetting size - Small");
-else if (num < 100)
-  alert("You are targetting size - Medium");
-else
-  alert("You are targetting size - Large");
+//   var num = Number(prompt("What is your desired weight?", "0"));
+// if (num < 10)
+//   alert("You are targetting size - Small");
+// else if (num < 100)
+//   alert("You are targetting size - Medium");
+// else
+//   alert("You are targetting size - Large");
   
 
-  var fat = confirm("Are you fat? (OK for Y, Cancel for N)");
-  var happy = confirm("Are you happy? (OK for Y, Cancel for N)");
-  if (fat && happy){
-  alert ("It's great that you're fat and happy! But wanna be fit and happy?");
-  }
-  else if (!happy){
-      alert("Be Fat and Happy!")
-  }
-  else{
-  alert ("Its great that you're happy!");}
+//   var fat = confirm("Are you fat? (OK for Y, Cancel for N)");
+//   var happy = confirm("Are you happy? (OK for Y, Cancel for N)");
+//   if (fat && happy){
+//   alert ("It's great that you're fat and happy! But wanna be fit and happy?");
+//   }
+//   else if (!happy){
+//       alert("Be Fat and Happy!")
+//   }
+//   else{
+//   alert ("Its great that you're happy!");}
+
+
+for (var i = 0; i < 500; i++) {
+               $("#bodychange").append("<div class='square2'></div>");
+            }
+             $(".square2").each(function() {
+            $(this).css("width",getRandomWidth());
+         });
   
- 
+         function getRandomWidth(){
+    return Math.floor(Math.random()*20)+20;
+  }
   
+  $(".square2").each(function() {
+            $(this).css("width",getRandomColor());
+         });
+         
+         function getRandomColor () {
+   var random0to255 = function() {
+					return Math.floor(Math.random()*255);
+				}
+				return "rgb(" + random0to255() + "," + random0to255() + "," + random0to255() + ")";
+			}
+         
+  
+  	var colorArray = ["#bc2779", "#201aa3", "#129184", "#471c72", "#931f61"];
+         for (var i = 0; i < 1044; i++) {
+            var hex = colorArray[Math.floor(Math.random() * colorArray.length)];
+            $("#example5").append("<div class='square2' style='background-color:" + hex + "';></div>");
+         }
+
+  
+  
+  
+
   var veggie=$("#veggie");
   $( ".circle1" ).click(function() {
     $( this ).hide();
@@ -169,7 +210,7 @@ else
     $( this ).css( "width", getRandomWidth());
   });
   function getRandomWidth(){
-    return Math.floor(Math.random()*200)+200;
+    return Math.floor(Math.random()*200 + 200 );
   }
   
   
@@ -183,9 +224,8 @@ else
 			    count++;
 			    $(this).html(count);
 			});
-  
-   
-  
+	
+
   
   
   </script>
