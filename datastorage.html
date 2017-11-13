@@ -8,8 +8,7 @@
 			    background-repeat: no-repeat;
 			    position:relative;
 			    background-size:1500px;
-				
-			}
+				}
 			
 			form {
 				font-family: Arial;
@@ -18,34 +17,73 @@
 				font-weight: bold;
 				display: inline-block;
     			margin-bottom: 5px;
+    			position:relative;
+    			width:600px;
+    			height:30px;
+    			left: 30px;
+                top: 50px;
+			}
+			
+			.box {
+				position:absolute;
+				width:480px;
+				height:350px;
+				left: 0px;
+                top: 0px;
+                background-color: white;
+                border-radius: 0px;
+                
 			}
 			p {
 				margin: 0;
 			}
 			input, textarea, select {
 				border: 1px solid #B2DFEE;
+				position:relative;
+			}
+			
+			button {
+				position:relative;
+				left:130px;
+                top: 150px;
 			}
 		</style>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	</head>
 	<body>
-		<form id="pizza-form">
+		
+		<form id="whowantsfruit">
+		<div class="box"></div>
+			
 		  <p><label id="name">Customer name: <input id="namefield" name="customer"></label></p>
-		  <p><label>Telephone: <input type="tel" name="phone"></label></p>
-		  <p><label>E-mail address: <input type="email" name="addr" placeholder="@newschool.edu"></label></p>
-		  <p><label>Size:
-		      <select name="size">
-		        <option value="">choose size</option>
-		        <option value="small">small (10-inch)</option>
-		        <option value="medium">medium (12-inch)</option>
-		        <option value="large">large (14-inch)</option>
+		  <p><label id="phone">Telephone: <input id="phonefield" name="phone"></label></p>
+		  <p><label id="email">E-mail address: <input id="emailfield" name="addr" placeholder="@newschool.edu"></label></p>
+		  <p><label>Fruit:
+		      <select name="fruit">
+		        <option value="">choose a fruit</option>
+		        <option value="apple">Apple</option>
+		        <option value="banana">Banana</option>
+		        <option value="orange">Orange</option>
+		        <option value="watermelon">Watermelon</option>
+		        <option value="mango">Mango</option>
 		      </select>
 		    </label>
+		    
+		    <p><label>Quantity:
+		      <select name="quantity">
+		        <option value="">choose a quantity</option>
+		        <option value="small">Small (5 fruits)</option>
+		        <option value="banana">Medium (15 fruits)</option>
+		        <option value="orange">Large (30 fruits</option>
+		      </select>
+		    </label>
+		    
+		    
 		  </p><p><label>Preferred delivery time:
-		      <input name="due" type="time" min="11:00" max="21:00" step="900">
+		      <input name="due" type="time" min="10:00" max="20:00" step="900">
 		  </label></p>
 		  <p><label>Delivery instructions:
-		      <textarea rows="3" cols="30" name="instructions">Help us get the 'za to you faster!</textarea>
+		      <textarea rows="3" cols="30" name="instructions">Tell us how your grub can reach you!</textarea>
 		  </label></p>
 		  <p><button onclick="store()" type="button">Submit order</button>
 		  <button onclick="clearData()" type="button">Clear data</button></p>
@@ -57,6 +95,14 @@
     			localStorage.setItem("name", $("#namefield")[0].value);
     			location.reload(); // refresh the page
     		}
+    		function store(){
+    			localStorage.setItem("email", $("#emailfield")[0].value);
+    			location.reload(); // refresh the page
+    		}
+    		function store(){
+    			localStorage.setItem("phone", $("#phonefield")[0].value);
+    			location.reload(); // refresh the page
+    		}
     		function clearData() {
     			localStorage.clear();
     			location.reload(); // refresh the page
@@ -64,6 +110,14 @@
     		if (localStorage.getItem("name")) {
     			$("#namefield").hide();
     			$("#name").append(localStorage.getItem("name"));
+    		}
+    		if (localStorage.getItem("email")) {
+    			$("#emailfield").hide();
+    			$("#email").append(localStorage.getItem("email"));
+    		}
+    		if (localStorage.getItem("phone")) {
+    			$("#phonefield").hide();
+    			$("#phone").append(localStorage.getItem("phone"));
     		}
 		</script>
 	</body>
