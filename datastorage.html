@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<title>Pick your own shrub</title>
+		<style>
+	 body {
+                background-color: #435943;
+               font-size: 40px;
+
+            }
+			form {
+				font-family: Helvetica;
+			}
+			label {
+				font-weight: bold;
+				display: inline-block;
+    			margin-bottom: 50px;
+			    }
+			p {
+				margin: 0;
+			}
+			input, textarea, select {
+				border: 5px solid #bed3be;
+			}
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<form id="plant-form">
+		  <font color = #ffffff><center><p><label id="name">Your name: <input id="namefield" name="customer"></label></p><br><br>
+          
+          <p><label>Telephone: <input type="tel" name="phone"></label></p><br><br>
+		  <p><label>E-mail address: <input type="email" name="addr" placeholder="@newschool.edu"></label></p><br><br>
+		  <p><label id="name">Like plants? <input id="name" name="likesplants"></label></p><br><br>
+		  <p><label>Size:
+		      <select name="size">
+		        <option value="">choose size</option>
+		        <option value="small">small (10-inch)</option>
+		        <option value="medium">medium (12-inch)</option>
+		        <option value="large">large (14-inch)</option>
+		      </select>
+		    </label><br><br>
+		  </p><p><label>Preferred delivery time:
+		      <input name="due" type="time" min="11:00" max="21:00" step="900">
+		  </label></p><br><br>
+		  <p><label>Delivery instructions:
+		      <textarea rows="3" cols="30" name="instructions">Help us get the 'za to you faster!</textarea>
+		  </label></p><br><br>
+		  <p><button onclick="store()" type="button">Submit order</button><button onclick="clearData()" type="button">Clear data</button></p>
+		</form></center></font>
+		<script>
+			/* global $ */
+			/* global localStorage */
+		    function store(){
+    			localStorage.setItem("name", $("#namefield")[0].value);
+    			location.reload(); // refresh the page
+    		}
+    		function clearData() {
+    			localStorage.clear();
+    			location.reload(); // refresh the page
+    		}
+    		if (localStorage.getItem("name")) {
+    			$("#namefield").hide();
+    			$("#name").append(localStorage.getItem("name"));
+    		}
+    		
+		</script>
+	</body>
+</html>
