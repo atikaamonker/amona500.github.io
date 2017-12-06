@@ -22,11 +22,17 @@
                width: 800px;
                height: 800px;
                border-radius: 400px;
-               background-color: ;
+               //background-color: ;
             }
             .goalayer2 {
                margin-left:350px;
                margin-top:-750px;
+               width:400px;
+               height:400px;
+               animation-name: circleanim;
+               animation-duration: 5s;
+               animation-timing-function: ease-out;
+               animation-iteration-count: infinite;
                }
                
             .goalayer3 {
@@ -37,7 +43,12 @@
             .goalayer4 {
                margin-left:850px;
                margin-top:-850px;
-               }      
+               animation-name: hotairballoonanim;
+               animation-duration: 10s;
+               animation-timing-function: ease-out;
+               animation-iteration-count: infinite;
+               opacity:1;
+             }      
             
             .goalayer5 {
                margin-left:525px;
@@ -62,8 +73,30 @@
             .nyclayer5 {
                margin-left:865px;
                margin-top:-1200px;
-               }  
+               } 
                
+               @keyframes hotairballoonanim {
+                   0% {
+                     margin-left:850px;
+                     margin-top:-850px;
+                     opacity:1;
+                   }
+    
+ 
+                50% {
+                     margin-left:850px;
+                     margin-top:-950px;
+                     opacity:0;
+                }
+               
+ 
+                100% {
+                      margin-left:850px;
+                      margin-top:-850px;
+                      opacity:1;
+                }
+               }
+                   
            
                
         </style>
@@ -75,13 +108,13 @@
         
         <h1><center><font color=#193149>GOA</font></center></h1>
        
-        <center><div class="container"><img src='mainpage goalayer1.png'></div></center>
+        <center><div class="container"><img src='mainpage goalayer1.png'></div></center></a>
         <div class="container goalayer2"><img src='mainpage goalayer2.png'></div>
         <div class="container goalayer3"><img src='mainpage goalayer3.png'></div>
         <a href="https://www.google.com/search?q=hot+air+balloon+in+goa&ie=utf-8&oe=utf-8&client=firefox-b-1-ab">
         <div class="container goalayer4"><img src='mainpage goalayer4.png'></div></a>
         <div class="container goalayer5"><img src='mainpage goalayer5.png'></div>
-        </a>
+        
        
         <a href="https://atikaamonker.github.io/nycmainpage.html">
             
