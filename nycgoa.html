@@ -1,7 +1,9 @@
 <html>
     <head>
         <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Anton ">
+          href="https://fonts.googleapis.com/css?family=Oswald">
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Just Me Again Down Here">
           
         <title>A story of two cities</title>
         <style>
@@ -15,37 +17,44 @@
                 color:black;
                 background-color:white;
             }
+            //img {
+            //    width: 100%;
+            //    height: 100%;
+            //}
             
             .container {
-               position: relative; 
-               top:20px;
-               width: 800px;
-               height: 800px;
-               border-radius: 400px;
-               background-color:white;
-            }
+               position: relative;
+             }
+           
             .goalayer {
-                position: relative; 
+               position: absolute;
+               margin-left:400px;
+               margin-top:-700px;
             }
-            .goalayer2 {
-               margin-left:350px;
-               margin-top:-750px;
+            .goalayer2 img {
                width:100px;
                height:100px;
-               animation-name: circleanim;
+               animation-name: sunanim;
                animation-duration: 5s;
                animation-timing-function: ease-out;
                animation-iteration-count: infinite;
-               }
+            }
                
             .goalayer3 {
-               margin-left:470px;
-               margin-top:-800px;
+               position: absolute; 
+               margin-left:500px;
+               margin-top:-720px;
+               animation-name: cloudanim;
+               animation-duration: 5s;
+               animation-timing-function: ease-out;
+               animation-iteration-count: 3;
+               
                }   
             
             .goalayer4 {
+               position: absolute;
                margin-left:850px;
-               margin-top:-850px;
+               margin-top:-780px;
                animation-name: hotairballoonanim;
                animation-duration: 5s;
                animation-timing-function: ease-out;
@@ -54,29 +63,103 @@
              }      
             
             .goalayer5 {
-               margin-left:525px;
-               margin-top:-380px;
+               position: absolute;
+               margin-left:580px;
+               margin-top:-320px;
                }         
                
+            .nyclayer {
+               position: absolute;
+               margin-left:400px;
+               margin-top:-700px;
+            }
+            
             .nyclayer2 {
+               position: absolute;
                margin-left:350px;
-               margin-top:-750px;
+               margin-top:-700px;
+               animation-name: staranim;
+               animation-duration: 4s;
+               animation-timing-function: ease-out;
+               animation-iteration-count: infinite;
+               opacity:1;
                }
                
             .nyclayer3 {
+               position: absolute;
                margin-left:485px;
-               margin-top:-580px;
+               margin-top:-490px;
                }   
             
             .nyclayer4 {
+               position: absolute;
                margin-left:450px;
-               margin-top:-555px;
+               margin-top:-245px;
+               animation-name: taxianim;
+               animation-duration: 3s;
+               animation-timing-function: ease-out;
+               animation-iteration-count: infinite;
+               opacity:1;
                }      
             
             .nyclayer5 {
+               position: absolute;
                margin-left:865px;
-               margin-top:-1200px;
-               } 
+               margin-top:-650px;
+               animation-name: airplaneanim;
+               animation-duration: 3s;
+               animation-timing-function: ease-out;
+               animation-iteration-count: infinite;
+               opacity:1;
+               }
+               
+              #goaprompt1 {
+                padding: 10px;
+                font-size: 35px;
+                margin:2px;
+                top:550px;
+                left:30px;
+                width:15%;
+                position: absolute;
+                 }
+               
+               #goaprompt2 {
+                padding: 10px;
+                font-size:30px;
+                margin:2px;
+                top:250px;
+                left:1150px;
+                width:15%;
+                position: absolute;
+                 }
+                   
+               #nycprompt1 {
+                padding: 10px;
+                font-size:25px;
+                margin:2px;
+                top:1500px;
+                left:70px;
+                width:17%;
+                position: absolute;
+                 }
+               
+               #nycprompt2 {
+                padding: 10px;
+                font-size:20px;
+                margin:2px;
+                top:210px;
+                left:1150px;
+                width:15%;
+                position: absolute;
+                 }
+                 
+                #arrow1 {
+                margin:2px;
+                top:300px;
+                left:30px;
+                position: absolute;
+                image-orientation:40deg;
+                 }    
                
                @keyframes hotairballoonanim {
                    0% {
@@ -100,55 +183,136 @@
                 }
                }
                
-               @keyframes circleanim{
+               @keyframes sunanim{
                     0% {
                         width:100px;
                         height:100px;
-                        line-height:100px;
                         }
                     
                     50%
                     { 
                         width:150px;
-                        height:150px;
-                        line-height:150px;
+                        height:150px
                         }
                         
                     100% {
                         width:100px;
                         height:100px;
-                        line-height:100px;
                         }
                     }
+               @keyframes cloudanim {
+                    from {
+                       margin-left:500px;
+                       margin-top:-720px;
+                       opacity:0;
+                    }
+                    to {
+                       margin-left:600px;
+                       margin-top:-720px;
+                       opacity:1;
+                    }
+                    } 
+                    
+               @keyframes staranim {
+                   0% {
+                     opacity:1;
+                   }
+    
+ 
+                   50% {
+                     opacity:0;
+                   }  
+               
+ 
+                   100% {
+                      opacity:1;
+                   }
+                    }     
+               
+               @keyframes taxianim {
+                   0% {
+                     margin-left:450px;
+                     margin-top:-245px;
+                   }
+    
+ 
+                   50% {
+                     margin-left:300px;
+                     margin-top:-245px;
+                   }  
+               
+ 
+                   100% {
+                     margin-left:450px;
+                     margin-top:-245px;
+                   }
+                    }  
+                    
+               @keyframes airplaneanim {
+                   0% {
+                      margin-left:865px;
+                      margin-top:-650px;
+                   }
                    
-           
+                   25% {
+                     margin-left:885px;
+                     margin-top:-700px;
+                   }
+ 
+                   50% {
+                     margin-left:900px;
+                     margin-top:-750px;
+                   }
+               
+                   75% {
+                     margin-left:885px;
+                     margin-top:-700px;
+                   }
+                   100% {
+                      margin-left:865px;
+                      margin-top:-650px;
+                   }
+                  }    
+                    
         </style>
         
     </head>
     <body>
         
-        <a href="https://atikaamonker.github.io/goamainpage.html">
         
-        <h1><center><font color=#193149>GOA</font></center></h1>
-       
-        <center><div class="container"><img src='mainpage goalayer1.png'></div></center>
+        
+        <h1><center><div style="font-family: 'Just Me Again Down Here',serif; color:#f44242">GOA</div></center></h1>
+        
+        <div id="goaprompt1" style="font-family: 'Just Me Again Down Here',serif; color:#b51294">Click on the illustration to know more about Goa</div><div class="container">
+        <div id="goaprompt2" style="font-family: 'Just Me Again Down Here',serif; color:#2a3099">Click on the hot air ballon to book one</div><div class="container">
+
+        <a href="https://atikaamonker.github.io/goapage1.html">
+        <center><img src='mainpage goalayer1.png'></center>
         <div class="goalayer goalayer2"><img src='mainpage goalayer2.png'></div>
         <div class="goalayer goalayer3"><img src='mainpage goalayer3.png'></div>
-        <a href="https://www.google.com/search?q=hot+air+balloon+in+goa&ie=utf-8&oe=utf-8&client=firefox-b-1-ab">
+        <a href="http://goa-tourism.com/GTDC-holidays/do-hot-air-ballooning.htm">
         <div class="goalayer goalayer4"><img src='mainpage goalayer4.png'></div></a>
         <div class="goalayer goalayer5"><img src='mainpage goalayer5.png'></div>
-        </a>
-       
-        <a href="https://atikaamonker.github.io/nycmainpage.html">
+        </div></a>
+         
+        <br><br>
+               
+        <h1><center><div style="font-family: 'Oswald',serif; color:#171984">NYC</div></center></h1>
+        
+        <div id="nycprompt1" style="font-family: 'Oswald',serif; color:#63625d">Click on the illustration to know more about New York City</div><div class="container">
+        <div id="nycprompt2" style="font-family: 'Oswald',serif; color:#68b2c4">Click on the airplane to book your tickets to NYC</div><div class="container">
+        
+        <a href="https://atikaamonker.github.io/nycpage1.html">
             
-        <h1><center><font color=#193149>NYC</font></center></h1>
+        <div class="container">
         <center><div class="container"><img src='mainpage nyclayer1.png'></div></center>
-        <div class="goalayer nyclayer2"><img src='mainpage nyclayer2.png'></div>
-        <div class="goalayer nyclayer3"><img src='mainpage nyclayer3.png'></div>
-        <div class="goalayer nyclayer4"><img src='mainpage nyclayer4.png'></div>
+        <div class="nyclayer nyclayer2"><img src='mainpage nyclayer2.png'></div>
+        <div class="nyclayer nyclayer3"><img src='mainpage nyclayer3.png'></div>
+        <div class="nyclayer nyclayer4"><img src='mainpage nyclayer4.png'></div>
         <a href="https://www.google.com/search?client=firefox-b-1-ab&ei=bsEgWr7hJKmj_Qa_8Z_ADQ&q=flights+from+nyc&oq=flights+from+nyc&gs_l=psy-ab.3..0l10.93048.96152.0.96649.16.9.0.7.7.0.63.489.9.9.0....0...1c.1.64.psy-ab..0.16.530...0i131i67k1j0i67k1j0i131k1.0.fKqZ4or4dmE">
-        <div class="goalayer nyclayer5"><img src='mainpage nyclayer5.png'></div></a>
-        </a>
+        <div class="nyclayer nyclayer5"><img src='mainpage nyclayer5.png'></div></a>
+        </div></a>
+        
         <br>
         <br>
       
