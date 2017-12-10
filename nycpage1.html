@@ -37,11 +37,6 @@
                margin-left:1620px;
             }
             
-            .nyclayer4a {
-               margin-top:-698px;
-               margin-left:1620px;
-               opacity:0;
-                }
            
             .nyclayer5 {
                margin-top:-470px;
@@ -80,7 +75,21 @@
                 width:14%;
                 position:absolute;
                  }  
-                 
+              
+            #exampleprompt3 {
+                font-size:20px;
+                margin:2px;
+                top:550px;
+                left:350px;
+                width:14%;
+                position:absolute;
+                animation-name: examplepromptanim;
+                animation-duration: 2s;
+                animation-timing-function: ease-out;
+                animation-iteration-count: infinite;
+                opacity:1;
+                }      
+            
             #empireprompt1 {
                 font-size:25px;
                 margin:2px;
@@ -160,7 +169,8 @@
                 to {
                     opacity:0;
                 }
-            }     
+            } 
+            
         </style>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
     </head>
@@ -171,6 +181,7 @@
         <br>
         <div id ="exampleprompt1" style="font-family: 'Oswald',serif; color:#595959">Click me for more information!</div>
         <div id ="exampleprompt2" style="font-family: 'Oswald',serif; color:#595959">Click on the colored icons if you wanna know more about them.</div>
+        <div id ="exampleprompt3" style="font-family: 'Oswald',serif; color:#595959">Use the right arrow key to start your NYC tour.</div>
         
         <div id ="empireprompt1" style="font-family: 'Oswald',serif; color:#0b48aa">The Empire State Building</div>
         <div id ="empireprompt2" style="font-family: 'Oswald',serif; color:#0b48aa">The 1,250-foot, 102-story Art Deco wonder was the tallest building in the world at the time of its completion, on May 1, 1931.</div>
@@ -249,6 +260,12 @@
           });
         });         
         
+        
+     $(window).scroll(function() {
+  if ($(this).scrollTop() > -200 && $(this).scrollTop()< -690) {
+    $('.goalayer7').show();
+  } 
+}); 
 
 </script>
 </script>
