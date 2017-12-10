@@ -3,15 +3,15 @@
         <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Anton">
           <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Quicksand ">
+          href="https://fonts.googleapis.com/css?family=Oswald ">
 
         <title>A story of two cities</title>
         <style>
             body {
                 background-color: #ffffff;
                 font-family: 'Anton', serif;
-               font-size: 90px;
-
+                font-size: 90px;
+                cursor:pointer;
             }
             span{
                 color:black;
@@ -35,31 +35,155 @@
             .nyclayer4 {
                margin-top:-700px;
                margin-left:1620px;
-               perspective: 600px;
             }
+            
+            .nyclayer4a {
+               margin-top:-698px;
+               margin-left:1620px;
+               opacity:0;
+                }
+           
             .nyclayer5 {
                margin-top:-470px;
                margin-left:2300px;
                }     
                
             .nyclayer6 {
-               margin-top:-694px;
+               margin-top:-690px;
                }   
                
             .nyclayer7 {
                position:fixed;
                margin-top:-800px;
                margin-left:0px;
-               }      
+               }
+               
+             #exampleprompt1 {
+                font-size:25px;
+                margin:2px;
+                top:500px;
+                left:10px;
+                width:17%;
+                position:absolute;
+                animation-name: examplepromptanim;
+                animation-duration: 2s;
+                animation-timing-function: ease-out;
+                animation-iteration-count: infinite;
+                opacity:1;
+                 }      
+            
+             #exampleprompt2 {
+                font-size:20px;
+                margin:2px;
+                top:650px;
+                left:15px;
+                width:14%;
+                position:absolute;
+                 }  
+                 
+            #empireprompt1 {
+                font-size:25px;
+                margin:2px;
+                top:550px;
+                left:1000px;
+                width:17%;
+                position:absolute;
+                 }      
+            
+             #empireprompt2 {
+                font-size:20px;
+                margin:2px;
+                top:600px;
+                left:1000px;
+                width:17%;
+                position:absolute;
+                 }  
+                 
+            #timesprompt1 {
+                font-size:25px;
+                margin:2px;
+                top:550px;
+                left:2250px;
+                width:17%;
+                position:absolute;
+                 }      
+            
+             #timesprompt2 {
+                font-size:20px;
+                margin:2px;
+                top:600px;
+                left:2250px;
+                width:17%;
+                position:absolute;
+                 }   
+              
+              #parkprompt1 {
+                font-size:25px;
+                margin:2px;
+                top:550px;
+                left:3600px;
+                width:17%;
+                position:absolute;
+                 }      
+            
+             #parkprompt2 {
+                font-size:20px;
+                margin:2px;
+                top:600px;
+                left:3600px;
+                width:17%;
+                position:absolute;
+                 }    
 
+              #libertyprompt1 {
+                font-size:25px;
+                margin:2px;
+                top:550px;
+                left:5800px;
+                width:17%;
+                position:absolute;
+                 }      
+            
+             #libertyprompt2 {
+                font-size:20px;
+                margin:2px;
+                top:600px;
+                left:5800px;
+                width:17%;
+                position:absolute;
+                 }
+                 
+            @keyframes examplepromptanim {
+                from {
+                  opacity:1;
+                }
+                to {
+                    opacity:0;
+                }
+            }     
         </style>
-        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
     </head>
     <body>
         
-        <h1><center><font color=#193149><div class="bouncing">NYC1</u></div></font></center></h1>
+        <h1><center><font color=#ffffff><div>NYC1</u></div></font></center></h1>
         <br>
         <br>
+        <div id ="exampleprompt1" style="font-family: 'Oswald',serif; color:#595959">Click me for more information!</div>
+        <div id ="exampleprompt2" style="font-family: 'Oswald',serif; color:#595959">Click on the colored icons if you wanna know more about them.</div>
+        
+        <div id ="empireprompt1" style="font-family: 'Oswald',serif; color:#0b48aa">The Empire State Building</div>
+        <div id ="empireprompt2" style="font-family: 'Oswald',serif; color:#0b48aa">The 1,250-foot, 102-story Art Deco wonder was the tallest building in the world at the time of its completion, on May 1, 1931.</div>
+        
+        <div id ="timesprompt1" style="font-family: 'Oswald',serif; color:#d60264">Times Square</div>
+        <div id ="timesprompt2" style="font-family: 'Oswald',serif; color:#d60264">Nicknamed - The Crossroads of the World , a third of a million people pass through Times Square everyday. On February, 2017 it was declared smoke-free.</div>
+        
+        <div id ="parkprompt1" style="font-family: 'Oswald',serif; color:#05770d">Central Park</div>
+        <div id ="parkprompt2" style="font-family: 'Oswald',serif; color:#05770d">The most visited urban park in the United States, Central Park is bigger than some countries. The park hosts 26,000 trees and seven water-bodies.</div>
+        
+        <div id ="libertyprompt1" style="font-family: 'Oswald',serif; color:#04918f">Statue of Liberty</div>
+        <div id ="libertyprompt2" style="font-family: 'Oswald',serif; color:#04918f">Lady Liberty wears a size 879 shoe  and has 25 windows in her crown. The 7 spikes in her crown represent the 7 continents and oceans in the world.</div>
+        
         <br>
         <center><div class="nyclayer1"><img src='nycpage layer1.png'></div></center>
         <center><div class="nyclayer2"><img src='nycpage layer2.png'></div></center>
@@ -74,9 +198,59 @@
       
        
         <center><div style="font-family: 'Quicksand',serif; color:#073d37"><a href ='nycmainpage.html'>Back to NYC</a></div></center>
+        
+        
 
-      
-       
+         <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+          /* global $ */
+        $(document).ready(function()
+        {
+          $("#empireprompt2").hide();
+          $("#empireprompt1").click(function()
+          {
+            $(this).next("#empireprompt2").slideToggle(200);
+          });
+        });
+        
+     $(document).ready(function()
+        {
+          $("#timesprompt2").hide();
+          $("#timesprompt1").click(function()
+          {
+            $(this).next("#timesprompt2").slideToggle(200);
+          });
+        });    
+    
+      $(document).ready(function()
+        {
+          $("#parkprompt2").hide();
+          $("#parkprompt1").click(function()
+          {
+            $(this).next("#parkprompt2").slideToggle(200);
+          });
+        });    
+        
+     $(document).ready(function()
+        {
+          $("#libertyprompt2").hide();
+          $("#libertyprompt1").click(function()
+          {
+            $(this).next("#libertyprompt2").slideToggle(200);
+          });
+        });   
+     
+     $(document).ready(function()
+        {
+          $("#exampleprompt2").hide();
+          $("#exampleprompt1").click(function()
+          {
+            $(this).next("#exampleprompt2").slideToggle(200);
+          });
+        });         
+        
 
+</script>
+</script>
     </body>
 </html>
