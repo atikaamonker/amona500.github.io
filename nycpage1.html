@@ -49,14 +49,14 @@
                
             .nyclayer7 {
                position:fixed;
-               margin-top:-800px;
+               margin-top:-778px;
                margin-left:0px;
                }
                
              #exampleprompt1 {
                 font-size:25px;
                 margin:2px;
-                top:500px;
+                top:600px;
                 left:10px;
                 width:17%;
                 position:absolute;
@@ -70,16 +70,16 @@
              #exampleprompt2 {
                 font-size:20px;
                 margin:2px;
-                top:650px;
+                top:690px;
                 left:15px;
-                width:14%;
+                width:10%;
                 position:absolute;
                  }  
               
             #exampleprompt3 {
                 font-size:20px;
                 margin:2px;
-                top:550px;
+                top:650px;
                 left:350px;
                 width:14%;
                 position:absolute;
@@ -93,8 +93,8 @@
             #empireprompt1 {
                 font-size:25px;
                 margin:2px;
-                top:550px;
-                left:1000px;
+                top:600px;
+                left:1300px;
                 width:17%;
                 position:absolute;
                  }      
@@ -102,8 +102,8 @@
              #empireprompt2 {
                 font-size:20px;
                 margin:2px;
-                top:600px;
-                left:1000px;
+                top:650px;
+                left:1300px;
                 width:17%;
                 position:absolute;
                  }  
@@ -111,8 +111,8 @@
             #timesprompt1 {
                 font-size:25px;
                 margin:2px;
-                top:550px;
-                left:2250px;
+                top:600px;
+                left:2160px;
                 width:17%;
                 position:absolute;
                  }      
@@ -120,8 +120,8 @@
              #timesprompt2 {
                 font-size:20px;
                 margin:2px;
-                top:600px;
-                left:2250px;
+                top:650px;
+                left:2160px;
                 width:17%;
                 position:absolute;
                  }   
@@ -129,7 +129,7 @@
               #parkprompt1 {
                 font-size:25px;
                 margin:2px;
-                top:550px;
+                top:600px;
                 left:3600px;
                 width:17%;
                 position:absolute;
@@ -138,7 +138,7 @@
              #parkprompt2 {
                 font-size:20px;
                 margin:2px;
-                top:600px;
+                top:650px;
                 left:3600px;
                 width:17%;
                 position:absolute;
@@ -147,8 +147,8 @@
               #libertyprompt1 {
                 font-size:25px;
                 margin:2px;
-                top:550px;
-                left:5800px;
+                top:600px;
+                left:5550px;
                 width:17%;
                 position:absolute;
                  }      
@@ -156,9 +156,9 @@
              #libertyprompt2 {
                 font-size:20px;
                 margin:2px;
-                top:600px;
-                left:5800px;
-                width:17%;
+                top:650px;
+                left:5550px;
+                width:18%;
                 position:absolute;
                  }
                  
@@ -181,7 +181,7 @@
         <br>
         <div id ="exampleprompt1" style="font-family: 'Oswald',serif; color:#595959">Click me for more information!</div>
         <div id ="exampleprompt2" style="font-family: 'Oswald',serif; color:#595959">Click on the colored icons if you wanna know more about them.</div>
-        <div id ="exampleprompt3" style="font-family: 'Oswald',serif; color:#595959">Use the right arrow key to start your NYC tour.</div>
+        <div id ="exampleprompt3" style="font-family: 'Oswald',serif; color:#595959">Use the right arrow key to cruise through NYC tour.</div>
         
         <div id ="empireprompt1" style="font-family: 'Oswald',serif; color:#0b48aa">The Empire State Building</div>
         <div id ="empireprompt2" style="font-family: 'Oswald',serif; color:#0b48aa">The 1,250-foot, 102-story Art Deco wonder was the tallest building in the world at the time of its completion, on May 1, 1931.</div>
@@ -203,12 +203,6 @@
         <center><div class="nyclayer5"><img src='nycpage layer5.png'></div></center>
         <center><div class="nyclayer6"><img src='nycpage layer6.png'></div></center>
         <center><div class="nyclayer7"><img src='nycpage layer7.png'></div></center>
-        <br>
-        <br>
-        <br>
-      
-       
-        <center><div style="font-family: 'Quicksand',serif; color:#073d37"><a href ='nycmainpage.html'>Back to NYC</a></div></center>
         
         
 
@@ -261,9 +255,10 @@
         });         
         
         
-     $(window).scroll(function() {
-  if ($(this).scrollTop() > -200 && $(this).scrollTop()< -690) {
-    $('.goalayer7').show();
+   $(window).scroll(function() {
+  if ($(this).scrollTop() > 10 && $(this).scrollTop() < 550) {
+    $(".nyclayer7").show();
+      
   } 
 }); 
 
