@@ -37,14 +37,36 @@
                 left:0px;
                 position:absolute;
                  }      
-               
             
+             #exampleprompt1 {
+                font-size:35px;
+                margin:2px;
+                top:50px;
+                left:15px;
+                width:20%;
+                position:absolute;
+                animation-name: examplepromptanim;
+                animation-duration: 2s;
+                animation-timing-function: ease-out;
+                animation-iteration-count: infinite;
+                opacity:1;
+             }     
+            
+            @keyframes examplepromptanim {
+                from {
+                  opacity:1;
+                }
+                to {
+                  opacity:0;
+                }
+            } 
             </style>
         
     </head>
     <body>
         
   
+        <div id ="exampleprompt1" style="font-family: 'Just Me Again Down Here',serif; color:#51078e">Use the right arrow key to cruise through GOA</div>
         
         <br>
         <center><div class="goalayer1"><img src='goapage layer1.png'></div></center>
