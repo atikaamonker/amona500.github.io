@@ -29,7 +29,7 @@
             }
             
             .nyclayer1 {
-               margin-top:-200px;
+               margin-top:200px;
                }
                
             .nyclayer2 {
@@ -40,12 +40,64 @@
             .nyclayer3 {
                margin-top:-175px;
                margin-left:75px;
-               }   
+               animation-name: taxianim;
+               animation-duration: 3s;
+               animation-timing-function: ease-out;
+               animation-iteration-count: infinite;
+               opacity:1;
+               }
+               
+             @keyframes taxianim {
+                   0% {
+                     margin-left:150px;
+                     margin-top:-175px;
+                   }
+    
+ 
+                   50% {
+                     margin-left:-600px;
+                     margin-top:-175px;
+                   }  
+               
+ 
+                   100% {
+                     margin-left:150px;
+                     margin-top:-175px;
+                   }
+                    }        
                
             .nyclayer4 {
-               margin-top:-1115px;
+               margin-top:-650px;
                margin-left:45px;
-               }      
+               animation-name: cloudanim;
+               animation-duration: 5s;
+               animation-timing-function: ease-out;
+               animation-iteration-count: infinite;
+               opacity:0.75;
+             }         
+               
+             @keyframes cloudanim {
+                   0% {
+                     margin-top:-650px;
+                     margin-left:50px;
+                     opacity:0.75;
+                   }
+    
+ 
+                   50% {
+                     margin-left:-600px;
+                     margin-top:-400px;
+                     opacity:0.25;
+                   }
+               
+ 
+                   100% {
+                     margin-top:-650px;
+                     margin-left:50px;
+                     opacity:0.75;
+                   }
+                    }              
+                  
               
            
 
@@ -53,29 +105,14 @@
         
     </head>
     <body>
-        
-        <h1><center><font color=#193149>NYC</u></font></center></h1>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
         <center><div class="nyclayer1"><img src='nycmainpage layer1.png'></div></center>
         <center><div class="nyclayer2"><img src='nycmainpage layer2.png'></div></center>
-         <center><div class="nyclayer3"><img src='nycmainpage layer3.png'></div></center>
+        <center><div class="nyclayer3"><img src='nycmainpage layer3.png'></div></center>
         <center><div class="nyclayer4"><img src='nycmainpage layer4.png'></div></center>
-        
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+    
 
-
-      <center><div style="font-family: 'Quicksand',serif; color:#073d37"><a href ='nycpage1.html'>NYC page 1</a></div></center>
-      
-       
-
-    </body>
+        <audio autoplay="autoplay">
+        <source src="nycsong2.mp3">
+    
+     </body> 
 </html>

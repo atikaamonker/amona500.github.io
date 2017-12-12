@@ -70,16 +70,47 @@
                 position:absolute;
                 }
             
-            #exampleprompt3 {
+             #exampleprompt3 {
+                font-size:35px;
+                margin:2px;
+                top:50px;
+                left:350px;
+                width:20%;
+                position:absolute;
+                animation-name: example3promptanim;
+                animation-duration: 2s;
+                animation-timing-function: ease-out;
+                animation-iteration-count: infinite;
+                opacity:1;
+                }
+             @keyframes example3promptanim {
+                from {
+                  opacity:1;
+                }
+                to {
+                  opacity:0;
+                }
+            } 
+            
+            #beachprompt1 {
                 font-size:60px;
                 margin:2px;
                 top:20px;
+                left:2250px;
+                width:50%;
+                position:absolute;
+                }
+                
+            #beachprompt2 {
+                font-size:25px;
+                margin:2px;
+                top:50px;
                 left:2550px;
                 width:50%;
                 position:absolute;
                 }
             
-            #exampleprompt4 {
+            #spiritualprompt1 {
                 font-size:60px;
                 margin:2px;
                 top:20px;
@@ -88,7 +119,16 @@
                 position:absolute;
                 }    
             
-            #exampleprompt5 {
+             #spiritualprompt2 {
+                font-size:25px;
+                margin:2px;
+                top:50px;
+                left:3950px;
+                width:50%;
+                position:absolute;
+                }    
+            
+            #cultureprompt1 {
                 font-size:60px;
                 margin:2px;
                 top:20px;
@@ -97,26 +137,36 @@
                 position:absolute;
                 }    
             
+            #cultureprompt2 {
+                font-size:25px;
+                margin:2px;
+                top:50px;
+                left:5300px;
+                width:30%;
+                position:absolute;
+                }    
                 
             </style>
-        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
     </head>
     <body>
         
   
         <div id ="exampleprompt1" style="font-family: 'Just Me Again Down Here',serif; color:#51078e">Use the right arrow key to cruise through GOA</div>
-        <div id ="exampleprompt2" style="font-family: 'Just Me Again Down Here',serif; color:#d63737">
-
-Pint-sized Goa is more than beaches and trance parties. A kaleidoscopic blend of Indian and Portuguese cultures, sweetened with sun, sea, sand, seafood and spirituality, there's nowhere in India quite like it.
+        <div id ="exampleprompt3" style="font-family: 'Just Me Again Down Here',serif; color:#068c9e">Click on the Large headers to know more about GOA!</div>
+        <div id ="exampleprompt2" style="font-family: 'Just Me Again Down Here',serif; color:#d63737">Pint-sized Goa is more than beaches and trance parties. A kaleidoscopic blend of Indian and Portuguese cultures, sweetened with sun, sea, sand, seafood and spirituality, there's nowhere in India quite like it.
 </div>
-        <a href="https://www.lonelyplanet.com/india/goa">
-        <div id ="exampleprompt3" style="font-family: 'Just Me Again Down Here',serif; color:#d63737">Beach Bounty</div></a>
-        <div id ="exampleprompt4" style="font-family: 'Just Me Again Down Here',serif; color:#d63737">Spiritual Sanctuary</div>
-        <div id ="exampleprompt5" style="font-family: 'Just Me Again Down Here',serif; color:#d63737">Cultural Crockpot</div>
         
+        <div id ="beachprompt1" style="font-family: 'Just Me Again Down Here',serif; color:#0658db">Beach Bounty</div>
+        <div id ="beachprompt2" style="font-family: 'Just Me Again Down Here',serif; color:#0658db">Goa's biggest draw is undoubtedly its virtually uninterrupted string of golden-sand beaches and each of the various beaches have developed their own personalities and reputations since the hippie days of the sixties.</div>
+        <div id ="spiritualprompt1" style="font-family: 'Just Me Again Down Here',serif; color:#990c6c">Spiritual Sanctuary</div>
+        <div id ="spiritualprompt2" style="font-family: 'Just Me Again Down Here',serif; color:#990c6c">Many travellers come here for a serious yoga experience and you'll find everything from drop-in classes to teaching training courses and spiritual retreats.</div>
+        <div id ="cultureprompt1" style="font-family: 'Just Me Again Down Here',serif; color:#068c9e">Cultural Crockpot</div>
+        <div id ="cultureprompt2" style="font-family: 'Just Me Again Down Here',serif; color:#068c9e">Goa stands out in India for its Portuguese colonial architecture and heritage.</div>
         
         <br>
-        <center><div class="goalayer1"><img src='goapage layer1.png'></div></center>
+        
+        <center><div class="goalayer1"><img src='goapage layer1.png'></div></center></a>
         <center><div class="goalayer2"><img src='goapage layer2.png'></div></center>
         <center><div class="goalayer3"><img src='goapage layer3.png'></div></center>
         
@@ -125,7 +175,37 @@ Pint-sized Goa is more than beaches and trance parties. A kaleidoscopic blend of
         <audio autoplay="autoplay" controls>
         <source src="goasong.mp3">
         
-    
+       
+    <script>
+      /* global $ */
+        
+         $(document).ready(function()
+        {
+          $("#beachprompt2").hide();
+          $("#beachprompt1").click(function()
+          {
+            $(this).next("#beachprompt2").slideToggle(200);
+          });
+        });       
+        
+         $(document).ready(function()
+        {
+          $("#spiritualprompt2").hide();
+          $("#spiritualprompt1").click(function()
+          {
+            $(this).next("#spiritualprompt2").slideToggle(200);
+          });
+        });       
+        
+         $(document).ready(function()
+        {
+          $("#cultureprompt2").hide();
+          $("#cultureprompt1").click(function()
+          {
+            $(this).next("#cultureprompt2").slideToggle(200);
+          });
+        });       
+    </script>
     </body>
     </html>
         
